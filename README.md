@@ -1,1 +1,1 @@
-# selenium-seubarriga
+**Testes funcionais com Selenium WebDriver: Do básico ao GRID**
