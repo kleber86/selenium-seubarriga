@@ -186,9 +186,9 @@ public class BasePage {
     }
 
     /********** Tabela **********/
-    public void clicarBotaoTabela(String colunaBusca, String valor, String colunaBotao, String idTabela){
+    public WebElement obterCelula(String colunaBusca, String valor, String colunaBotao, String idTabela){
 
-        WebElement tabela = getDriver().findElement(By.xpath("//*[@id='elementosForm:tableUsuarios']"));
+        WebElement tabela = getDriver().findElement(By.xpath("//*[@id='"+idTabela+"']"));
         int idColuna = obterIndiceColuna(colunaBusca, tabela);
 
         int idLinha = obterIndiceLinha(valor, tabela, idColuna);
@@ -196,6 +196,12 @@ public class BasePage {
         int idColunaBotao = obterIndiceColuna(colunaBotao, tabela);
 
         WebElement celula = tabela.findElement(By.xpath(".//tr["+idLinha+"]/td["+idColunaBotao+"]"));
+        return celula;
+
+    }
+
+    public void clicarBotaoTabela(String colunaBusca, String valor, String colunaBotao, String idTabela){
+        WebElement celula =  obterCelula(colunaBusca,valor, colunaBotao, idTabela);
         celula.findElement(By.xpath(".//input")).click();
     }
 
