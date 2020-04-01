@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tests.ContaTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.722 s - in tests.ContaTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.352 s - in tests.ContaTest

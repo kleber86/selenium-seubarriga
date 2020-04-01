@@ -12,6 +12,7 @@ core/DriverFactory$1.class
 tests/SaldoTest.class
 core/BaseTest.class
 core/DriverFactory.class
+core/Propriedades$TipoExecucao.class
 core/BasePage.class
 tests/ContaTest.class
 pages/MovimentacaoPage.class
