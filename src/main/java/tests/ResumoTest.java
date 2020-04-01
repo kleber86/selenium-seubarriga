@@ -6,8 +6,14 @@ import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebElement;
 import pages.MenuPage;
 import pages.ResumoPage;
+
+import java.sql.Driver;
+import java.util.List;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ResumoTest extends BaseTest {
@@ -29,5 +35,9 @@ public class ResumoTest extends BaseTest {
         menuPage.acessarTelaResumo();
 
         Assert.assertEquals("Seu Barriga - Extrato", DriverFactory.getDriver().getTitle());
+
+        List<WebElement> elementosEncontrados =
+                DriverFactory.getDriver().findElements(By.xpath("//*[@id='tabelaExtrato']/tbody/tr"));
+        Assert.assertEquals(0, elementosEncontrados.size());
     }
 }
