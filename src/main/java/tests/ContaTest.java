@@ -1,18 +1,19 @@
-package core;
+package tests;
 
+import core.BaseTest;
 import org.junit.Assert;
 import org.junit.Test;
 import pages.ContasPage;
 import pages.MenuPage;
 
-public class ContaTest extends BaseTest{
+public class ContaTest extends BaseTest {
 
     MenuPage menuPage = new MenuPage();
     ContasPage contasPage = new ContasPage();
 
     @Test
     public void test(){
-        menuPage.acessarTelaIncerirConta();
+        menuPage.acessarTelaInserirConta();
 
         contasPage.setNome("Conta do Teste");
         contasPage.salvar();
@@ -33,7 +34,7 @@ public class ContaTest extends BaseTest{
 
     @Test
     public void testInserirContaMesmoNome(){
-        menuPage.acessarTelaIncerirConta();
+        menuPage.acessarTelaInserirConta();
 
         contasPage.setNome("Conta do Teste Alterada");
         contasPage.salvar();
