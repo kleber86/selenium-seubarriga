@@ -4,7 +4,7 @@ import core.BasePage;
 
 public class MenuPage extends BasePage {
 
-    public void acessarTelaIniciarConta(){
+    public void acessarTelaIncerirConta(){
         clicarLink("Contas");
         clicarLink("Adicionar");
     }
