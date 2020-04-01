@@ -7,7 +7,6 @@ import org.junit.Test;
 import pages.MenuPage;
 import pages.MovimentacaoPage;
 import utils.DataUtils;
-
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -21,8 +20,8 @@ public class MovimentacaoTest extends BaseTest {
     public void testInserirMovimentacao(){
         menuPage.acessarTelaInserirMovimentacao();
 
-        movimentacaoPage.setDataMovimentacao("01/01/2000");
-        movimentacaoPage.setDataPagamento("01/01/2000");
+        movimentacaoPage.setDataMovimentacao(DataUtils.obertDataFormatada(new Date()));
+        movimentacaoPage.setDataPagamento(DataUtils.obertDataFormatada(new Date()));
         movimentacaoPage.setDescricao("Movimentação do Teste");
         movimentacaoPage.setInteressado("Interessado Qualquer");
         movimentacaoPage.setValor("500");
