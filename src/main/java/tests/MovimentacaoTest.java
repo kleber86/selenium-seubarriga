@@ -3,7 +3,9 @@ package tests;
 import core.BasePage;
 import core.BaseTest;
 import org.junit.Assert;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 import pages.MenuPage;
 import pages.MovimentacaoPage;
 import utils.DataUtils;
@@ -11,13 +13,14 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class MovimentacaoTest extends BaseTest {
 
     private MenuPage menuPage = new MenuPage();
     private MovimentacaoPage movimentacaoPage = new MovimentacaoPage();
 
     @Test
-    public void testInserirMovimentacao(){
+    public void test1_InserirMovimentacao(){
         menuPage.acessarTelaInserirMovimentacao();
 
         movimentacaoPage.setDataMovimentacao(DataUtils.obertDataFormatada(new Date()));
@@ -25,7 +28,7 @@ public class MovimentacaoTest extends BaseTest {
         movimentacaoPage.setDescricao("Movimentação do Teste");
         movimentacaoPage.setInteressado("Interessado Qualquer");
         movimentacaoPage.setValor("500");
-        movimentacaoPage.setConta("Conta do Teste Alterada");
+        movimentacaoPage.setConta("Conta do Teste Hoje1");
         movimentacaoPage.setStatusPago();
         movimentacaoPage.salvar();
 
@@ -33,7 +36,7 @@ public class MovimentacaoTest extends BaseTest {
     }
 
     @Test
-    public void testCamposObrigatorios(){
+    public void test2_CamposObrigatorios(){
         menuPage.acessarTelaInserirMovimentacao();
 
         movimentacaoPage.salvar();
@@ -47,7 +50,7 @@ public class MovimentacaoTest extends BaseTest {
     }
 
     @Test
-    public void inserirMovimentacaoFutura(){
+    public void inserir3_MovimentacaoFutura(){
         menuPage.acessarTelaInserirMovimentacao();
 
         Date dataFutura = DataUtils.obterDataComDiferencaDias(5);
@@ -57,7 +60,7 @@ public class MovimentacaoTest extends BaseTest {
         movimentacaoPage.setDescricao("Movimentação do Teste");
         movimentacaoPage.setInteressado("Interessado Qualquer");
         movimentacaoPage.setValor("500");
-        movimentacaoPage.setConta("Conta do Teste Alterada");
+        movimentacaoPage.setConta("Conta do Teste Hoje1");
         movimentacaoPage.setStatusPago();
         movimentacaoPage.salvar();
 
