@@ -2,6 +2,7 @@ package tests;
 
 import core.BasePage;
 import core.BaseTest;
+import core.Propriedades;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -28,7 +29,7 @@ public class MovimentacaoTest extends BaseTest {
         movimentacaoPage.setDescricao("Movimentação do Teste");
         movimentacaoPage.setInteressado("Interessado Qualquer");
         movimentacaoPage.setValor("500");
-        movimentacaoPage.setConta("Conta do Teste Hoje1");
+        movimentacaoPage.setConta(Propriedades.NOME_CONTA_ALTERADA);
         movimentacaoPage.setStatusPago();
         movimentacaoPage.salvar();
 
@@ -60,7 +61,7 @@ public class MovimentacaoTest extends BaseTest {
         movimentacaoPage.setDescricao("Movimentação do Teste");
         movimentacaoPage.setInteressado("Interessado Qualquer");
         movimentacaoPage.setValor("500");
-        movimentacaoPage.setConta("Conta do Teste Hoje1");
+        movimentacaoPage.setConta(Propriedades.NOME_CONTA_ALTERADA);
         movimentacaoPage.setStatusPago();
         movimentacaoPage.salvar();
 
