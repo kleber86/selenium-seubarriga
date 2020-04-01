@@ -6,8 +6,10 @@ import org.junit.Assert;
 import org.junit.Test;
 import pages.MenuPage;
 import pages.MovimentacaoPage;
+import utils.DataUtils;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 public class MovimentacaoTest extends BaseTest {
@@ -43,5 +45,24 @@ public class MovimentacaoTest extends BaseTest {
         Assert.assertTrue(erros.containsAll(Arrays.asList(
                 "Data da Movimentação é obrigatório", "Data do pagamento é obrigatório", "Descrição é obrigatório", "Interessado é obrigatório", "Valor é obrigatório", "Valor deve ser um número"
         )));
+    }
+
+    @Test
+    public void inserirMovimentacaoFutura(){
+        menuPage.acessarTelaInserirMovimentacao();
+
+        Date dataFutura = DataUtils.obterDataComDiferencaDias(5);
+
+        movimentacaoPage.setDataMovimentacao(DataUtils.obertDataFormatada(dataFutura));
+        movimentacaoPage.setDataPagamento(DataUtils.obertDataFormatada(dataFutura));
+        movimentacaoPage.setDescricao("Movimentação do Teste");
+        movimentacaoPage.setInteressado("Interessado Qualquer");
+        movimentacaoPage.setValor("500");
+        movimentacaoPage.setConta("Conta do Teste Alterada");
+        movimentacaoPage.setStatusPago();
+        movimentacaoPage.salvar();
+
+        List<String> erros = movimentacaoPage.obterErros();
+        Assert.assertTrue(erros.contains("Data da Movimentação deve ser menor ou igual à data atual"));
     }
 }
