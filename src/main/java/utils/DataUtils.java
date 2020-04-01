@@ -13,7 +13,7 @@ public class DataUtils {
         return calendar.getTime();
     }
 
-    public static String obertDataFormatada(Date data){
+    public static String obterDataFormatada(Date data){
         DateFormat formato = new SimpleDateFormat("dd/MM/YYY");
         return formato.format(data);
     }

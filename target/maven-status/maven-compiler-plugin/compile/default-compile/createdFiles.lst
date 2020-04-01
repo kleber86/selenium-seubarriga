@@ -1,3 +1,4 @@
+core/DriverFactory$2.class
 core/Propriedades.class
 tests/ResumoTest.class
 tests/RemoverMovimentacaoContaTest.class
@@ -7,6 +8,7 @@ pages/HomePage.class
 pages/ContasPage.class
 pages/ResumoPage.class
 utils/DataUtils.class
+core/DriverFactory$1.class
 tests/SaldoTest.class
 core/BaseTest.class
 core/DriverFactory.class
@@ -15,3 +17,4 @@ tests/ContaTest.class
 pages/MovimentacaoPage.class
 pages/MenuPage.class
 pages/LoginPage.class
+core/Propriedades$Browsers.class
