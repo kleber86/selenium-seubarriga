@@ -1,0 +1,17 @@
+core/Propriedades.class
+tests/ResumoTest.class
+tests/RemoverMovimentacaoContaTest.class
+suites/SuiteGeral.class
+tests/MovimentacaoTest.class
+pages/HomePage.class
+pages/ContasPage.class
+pages/ResumoPage.class
+utils/DataUtils.class
+tests/SaldoTest.class
+core/BaseTest.class
+core/DriverFactory.class
+core/BasePage.class
+tests/ContaTest.class
+pages/MovimentacaoPage.class
+pages/MenuPage.class
+pages/LoginPage.class

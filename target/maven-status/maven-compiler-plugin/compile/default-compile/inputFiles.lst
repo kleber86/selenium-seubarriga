@@ -1,0 +1,17 @@
+/home/kleber/ProjetoBasico/src/main/java/pages/ResumoPage.java
+/home/kleber/ProjetoBasico/src/main/java/pages/ContasPage.java
+/home/kleber/ProjetoBasico/src/main/java/suites/SuiteGeral.java
+/home/kleber/ProjetoBasico/src/main/java/utils/DataUtils.java
+/home/kleber/ProjetoBasico/src/main/java/tests/MovimentacaoTest.java
+/home/kleber/ProjetoBasico/src/main/java/pages/MenuPage.java
+/home/kleber/ProjetoBasico/src/main/java/core/BaseTest.java
+/home/kleber/ProjetoBasico/src/main/java/tests/ResumoTest.java
+/home/kleber/ProjetoBasico/src/main/java/tests/ContaTest.java
+/home/kleber/ProjetoBasico/src/main/java/tests/RemoverMovimentacaoContaTest.java
+/home/kleber/ProjetoBasico/src/main/java/pages/LoginPage.java
+/home/kleber/ProjetoBasico/src/main/java/pages/HomePage.java
+/home/kleber/ProjetoBasico/src/main/java/pages/MovimentacaoPage.java
+/home/kleber/ProjetoBasico/src/main/java/core/BasePage.java
+/home/kleber/ProjetoBasico/src/main/java/tests/SaldoTest.java
+/home/kleber/ProjetoBasico/src/main/java/core/DriverFactory.java
+/home/kleber/ProjetoBasico/src/main/java/core/Propriedades.java
