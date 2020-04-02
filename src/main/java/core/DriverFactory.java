@@ -46,6 +46,19 @@ public class DriverFactory {
 				e.printStackTrace();
 			}
 		}
+		if(Propriedades.TIPO_EXECUCAO == Propriedades.TipoExecucao.NUVEM) {
+			DesiredCapabilities cap = null;
+			switch (Propriedades.BROWSER) {
+				case FIREFOX: cap = DesiredCapabilities.firefox(); break;
+				case CHROME: cap = DesiredCapabilities.chrome(); break;
+			}
+			try {
+				driver = new RemoteWebDriver(new URL("https://e@ondemand.saucelabs.com:443/wd/hub"), cap);
+			} catch (MalformedURLException e) {
+				System.err.println("Falha na conex達o com o GRID");
+				e.printStackTrace();
+			}
+		}
 		driver.manage().window().setSize(new Dimension(1200, 765));
 		return driver;
 	}

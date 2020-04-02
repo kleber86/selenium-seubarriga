@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tests.RemoverMovimentacaoContaTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.836 s - in tests.RemoverMovimentacaoContaTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.126 s - in tests.RemoverMovimentacaoContaTest

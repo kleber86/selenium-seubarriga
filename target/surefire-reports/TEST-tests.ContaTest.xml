@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tests.ContaTest" time="10.352" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tests.ContaTest" time="55.295" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/kleber/ProjetoBasico/target/surefire/surefirebooter3828656889328935185.jar /home/kleber/ProjetoBasico/target/surefire 2020-04-01T20-19-21_734-jvmRun1 surefire6006369327553592623tmp surefire_06796253660978548224tmp"/>
+    <property name="sun.java.command" value="/home/kleber/ProjetoBasico/target/surefire/surefirebooter4267858574112630976.jar /home/kleber/ProjetoBasico/target/surefire 2020-04-01T21-54-55_109-jvmRun1 surefire6389505313744670818tmp surefire_07224667182296915310tmp"/>
     <property name="surefire.test.class.path" value="/home/kleber/ProjetoBasico/target/test-classes:/home/kleber/ProjetoBasico/target/classes:/home/kleber/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/home/kleber/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/home/kleber/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/home/kleber/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/home/kleber/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/home/kleber/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/home/kleber/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/home/kleber/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/home/kleber/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/home/kleber/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/home/kleber/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/kleber/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/kleber/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/home/kleber/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/kleber/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/kleber/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/kleber/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/kleber/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/kleber/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/kleber/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/kleber/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/home/kleber/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/home/kleber/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/home/kleber/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/home/kleber/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/kleber/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/kleber/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/kleber"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/kleber/ProjetoBasico/target/surefire/surefirebooter3828656889328935185.jar"/>
+    <property name="surefire.real.class.path" value="/home/kleber/ProjetoBasico/target/surefire/surefirebooter4267858574112630976.jar"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_181-8u181-b13-2~deb9u1-b13"/>
@@ -58,7 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="test1_InserirConta" classname="tests.ContaTest" time="4.734"/>
-  <testcase name="test2_AlterarConta" classname="tests.ContaTest" time="6.665"/>
-  <testcase name="test3_InserirContaMesmoNome" classname="tests.ContaTest" time="3.686"/>
+  <testcase name="test2_AlterarConta" classname="tests.ContaTest" time="38.88"/>
+  <testcase name="test1_InserirConta" classname="tests.ContaTest" time="23.38"/>
+  <testcase name="test3_InserirContaMesmoNome" classname="tests.ContaTest" time="37.665"/>
 </testsuite>
